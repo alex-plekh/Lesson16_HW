@@ -10,10 +10,10 @@ const myTitle = document.createElement('h1');
 myTitle.innerHTML = "<h1 id='txt'>События</h1>";
 document.body.appendChild(myTitle);
 
-const myFirstSpan = document.createElement('p');
-myFirstSpan.innerHTML = "X:  <span> 0 </span>" + " Y: <span> 0 </span>";
-document.body.appendChild(myFirstSpan);
-myFirstSpan.classList.add('firstCoordinate');
+const mySecondSpan = document.createElement('p');
+mySecondSpan.innerHTML = " X:  <span> 0 </span> " + " Y: <span>0</span>";
+document.body.appendChild(mySecondSpan);
+mySecondSpan.classList.add('secondCoordinate');
 
 const myDiv = document.createElement('div');
 myDiv.innerHTML = "<div></div>";
@@ -22,10 +22,10 @@ myDiv.style.height = '400px';
 myDiv.style.border = '1px solid black';
 document.body.appendChild(myDiv);
 
-const mySecondSpan = document.createElement('p');
-mySecondSpan.innerHTML = "X:  <span> 0 </span> " + " Y: <span>0</span>";
-document.body.appendChild(mySecondSpan);
-mySecondSpan.classList.add('secondCoordinate');
+const myFirstSpan = document.createElement('p');
+myFirstSpan.innerHTML = "Координаты внутри блока: X:  <span> 0 </span>" + " Y: <span> 0 </span>";
+document.body.appendChild(myFirstSpan);
+myFirstSpan.classList.add('firstCoordinate');
 
 const firstCoordinateX = document.querySelector('.firstCoordinate span:first-child');
 const firstCoordinateY = document.querySelector('.firstCoordinate span:last-child');
