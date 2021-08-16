@@ -34,16 +34,12 @@ const secondCoordinateY = document.querySelector('.secondCoordinate span:last-ch
 
 document.querySelector('div').onmousemove = function (event) {
     event = event || window.onload;
-    secondCoordinateX.innerHTML = '0';
-    secondCoordinateY.innerHTML = '0';
     firstCoordinateX.innerHTML = event.offsetX;
     firstCoordinateY.innerHTML = event.offsetY;
 }
 
-document.querySelector('html').onmouseout = function (event) {
+document.querySelector('html').onmousemove = function (event) {
     event = event || window.onload;
-    firstCoordinateX.innerHTML = '0';
-    firstCoordinateY.innerHTML = '0';
     secondCoordinateX.innerHTML = event.pageX;
     secondCoordinateY.innerHTML = event.pageY;
 }
